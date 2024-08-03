@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car List</title>
+</head>
+<body>
+  <h1>Car List</h1>
+  <ul>
+    <% cars.forEach(car => { %>
+      <li><%= car.carName %> - <%= car.manufacturingYear %> - $<%= car.price %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
